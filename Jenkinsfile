@@ -3,17 +3,17 @@ pipeline {
   stages {
     stage("Build") {
       steps {
-        sh "python1.py"
+        sh "python3 python1.py"
       }
     }
     stage("Test") {
       steps {
-        sh "python2.py"
+        sh "python3 python2.py"
       }
     }
     stage("Deploy") {
       steps {
-        sh "python3.py"
+        sh "python3 python3.py"
       }
     }
   }
